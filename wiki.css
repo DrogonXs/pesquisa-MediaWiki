@@ -1,0 +1,142 @@
+body, html{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9bc27292880429.5e569ff84e4d0.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+    transform-style: preserve-3d;
+}
+
+.secao{
+    margin: 50px;
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    transform-style: inherit;
+}
+
+.secao::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -10;/*profundidade*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateZ(-1px) scale(1.5);
+}
+
+.conteudo{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    padding: 20px ;
+    background-color: white;
+    color: rgb(7, 7, 7);
+    text-align: justify;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 10px 10px 10px #000000;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+
+h2{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px #000000;
+    font-size: 30px;
+    font-family: "cyber";
+}
+
+h1{
+    text-align: center;
+    border: solid 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: "cyber";
+    color: #000000;
+    text-shadow: 1px 1px 1px #ff0505;
+  
+    background-image: url(icone.png);
+  
+    
+}
+span{
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0% 2rem;
+
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+}
+
+
+span{
+    color: #b50d10;
+    font-family: "cyber";
+}
+
+
+
+.card img{
+    height: 400px;
+
+}
+
+.card>div{
+    padding: 2rem;
+
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+@font-face {
+    font-family: 'cyber';
+    src: url(Cyberverse.otf) format("opentype"), url(Cyberverse.otf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+footer{
+    color: red;
+    background-color: #000000;
+    position: absolute;
+   
+
+}
